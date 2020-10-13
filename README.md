@@ -1,3 +1,9 @@
+#Assignment
+1. Add an input field that updates a property (username) via two-way-binding
+2. Output username via String interpolation (paragraph below)
+3. Add a button which may only be clicked if username is not an empty string
+4. upon clicking button the username should be set to an empty string
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
