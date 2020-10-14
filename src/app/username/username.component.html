@@ -1,6 +1,13 @@
+<label>User Name</label>
 <input
-  [(ngModel)]="userName">
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName"
+  (input)="onUpdateUserName($event)">
+<hr>
 <p>{{userName}}</p>
+<hr>
 <button
-  disabled="!isActive"
-  (click) = "clear()"/>
+  class="btn btn-primary"
+  [disabled]="!isActive"
+  (click) = "clear()">Clear</button>

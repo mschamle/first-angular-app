@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsernameComponent implements OnInit {
   userName = '';
-  isActive = true;
+  isActive = false;
 
   constructor() { }
 
@@ -16,5 +16,15 @@ export class UsernameComponent implements OnInit {
 
   clear(): void {
       this.userName = '';
+      this.isActive = true;
+  }
+
+  onUpdateUserName(event: Event): void {
+    if ((event.target as HTMLInputElement).value !== ''){
+      this.isActive = true;
+    }
+    else {
+      this.isActive = false;
+    }
   }
 }
